@@ -175,8 +175,8 @@ color:white;"><b
 class="ita">EAT</b>GRY</a></h1>
 </div>
 <div id="info">
-<h2>           Eatgry helps you to find 
-           restaurants near the city you're in!
+<h2>           Let <i>us</i> pick out a 
+                 restaurant for you.
           </h2>
 </div>
 <div id="cities" style="display:none;">
@@ -201,7 +201,7 @@ value="houston">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Houston</option>
 value="las-vegas">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Las 
 Vegas</option>
 <option 
-value="los-anegles">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Los 
+value="los-angeles">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Los 
 
 Angeles</option>
 <option 
