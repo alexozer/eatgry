@@ -1,3 +1,6 @@
-.*
+.bash*
 *.save*
 *test*
+.local/
+.ssh/
+.vim*
