@@ -4,3 +4,5 @@
 .local/
 .ssh/
 .vim*
+*.save*
+*test*
