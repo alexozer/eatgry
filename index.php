@@ -249,10 +249,5 @@ appear('cities');appear('srch');" >Try now!</div>
 </div>
 <br>
 <h3 class="hlp"><a href="mailto:me@afapps.net">HELP</a></h3>
-<?php
-$n = "new-jersey";
-exec("eatgry $n", $output, $status);
-echo $output[0];
-?>
 </body>
 </html>
