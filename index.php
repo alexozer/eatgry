@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -99,7 +102,9 @@ color:white;
 	-moz-border-radius-bottomleft:16px;
 	border-bottom-left-radius:16px;
 	border:1px solid white;
-	color:white;
+position:relative;	
+top:10px;
+color:white;
 	font-family:hl;
 	font-size:25px;
 	font-style:normal;
@@ -114,7 +119,7 @@ color:white;
 
 .search:active {
 	position:relative;
-	top:1px;
+	top:8px;
 }
 .hlp
 {
@@ -138,16 +143,14 @@ outline: 0;
       border: 2;  /*Removes border*/
       border-color:white;
       border-radius:1;
-      -webkit-appearance: none;  /*Removes default chrome and safari 
-style*/
+ -webkit-appearance: none;  /*Removes default chrome and safari style*/
+     -moz-appearance: none;  /*Removes default style Firefox*/
       -moz-appearance: none; /* Removes Default Firefox style*/
-      background: url('drop.png') no-repeat;  /*Adds background-image*/
+ background: url('http://s27.postimg.org/v9pyo4cpr/drop.png') no-repeat;
       background-color:white;
       background-size: 30px 30px;
       background-position: left 10px;  /*Position of the 
-background-image*/
       width: 250px; /*Width of select dropdown to give space for arrow 
-image*/
       text-indent: 0.01px; /* Removes default arrow from firefox*/
       font-family:hl;
 	  font-size:20px;
@@ -182,6 +185,9 @@ class="ita">EAT</b>GRY</a></h1>
 <div id="cities" style="display:none;">
 <form method="post" action="search.php">
 <select name="city">
+<option 
+value="detroit">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Detroit</option>
+
 <option 
 value="atlanta">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Atlanta</option>
 <option 
@@ -234,8 +240,7 @@ value="seattle">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Seattle</option>
 value="toronto">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Toronto</option>
 <option value="vancouver">&#160;&#160;&#160;&#160;&#160;&#160;&#160;         
 &#160;Vancouver / BC</option>
-<option value="washington 
-dc">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Washington 
+<option value="washington dc">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Washington 
 DC</option>
 </select>
 <button style="display:none;" id="srch" class="search" >Search</button>

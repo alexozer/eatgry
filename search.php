@@ -1,4 +1,5 @@
 <?php
+session_start();
 $nm = $_POST['city'];
 exec("eatgry $nm", $output, $status);
 ?>
@@ -36,6 +37,15 @@ text-align:center;
 margin-left:auto;
 margin-right:auto;
 width:70%;
+color:white;
+}
+#heo h1{
+font-family:fr;
+font-size:80px;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+width:20%;
 color:white;
 }
 #res h2
@@ -79,9 +89,19 @@ class="ita">EAT</b>GRY</a></h1>
 </div>
 <div id="info">
 <h2>Random result</h2>
-<br>
+<div id="heo">
+<h1><?php echo $nm; ?></h1>
+</div>
 <div id="res">
-<h2><?php echo $output[0]; ?></h2>
+<?php
+$data = explode(',',trim($output[0]));
+?>
+<h2>
+We choose <u><i><?php echo $data[0]; ?></i></u>  located in <u><i><?php echo 
+$data[1]; ?></i></u>. They are a(n) <u><i><?php echo $data[2]; ?></i></u> 
+restaurant, and are rated at <u><?php echo $data[3]/10; ?></u> star(s).  The overall price on a scale of 1 to 
+4<b style="font-size:15px;">(4 being largest)</b> is <u><?php echo $data[4]; ?></u>.
+</h2>
 </div>
 </div>
 <div id="infoo">
