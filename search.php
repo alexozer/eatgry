@@ -1,7 +1,6 @@
 <?php
 $nm = $_POST['city'];
 exec("eatgry $nm", $output, $status);
-echo $output[0];
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -39,6 +38,16 @@ margin-right:auto;
 width:70%;
 color:white;
 }
+#res h2
+{
+font-family:fr;
+font-size:45px;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+width:70%;
+color:white;
+}
 #info h2
 {
 font-family:hl;
@@ -70,6 +79,10 @@ class="ita">EAT</b>GRY</a></h1>
 </div>
 <div id="info">
 <h2>Random result</h2>
+<br>
+<div id="res">
+<h2><?php echo $output[0]; ?></h2>
+</div>
 </div>
 <div id="infoo">
 <h2>Created by <i>Ahmed</i>, <i>Alex</i>, and <i>Justin</i></h2>
